@@ -1,55 +1,59 @@
 ##10demo.py by Dean Abdelnaby
+def isinteger(a):
+    if a % 1 == 0 and a // 1 == a:
+        return True
+    else:
+        return False
+# a = input('Is x an integer? x = ') 
 
-print("hello world") #greeting
+def isprobability(b):
+    if 0 <= b <= 1:
+        return True
+    else:
+        return False
+# b = input('Is my number a probability?')
 
-"""
-holy moly
-this is a
- multi-line comment
-"""
+def dnaweight(d):
+    if d == 'A' or d== 'a' or d== 'Adenine' or d== 'adenine':
+        return print('Adenine in DNA has a molecular weight of 135.13 g/mol')
+    elif d == 'C' or d== 'c' or d== 'Cytosine' or d== 'cytosine':
+        return print('Cytosine in DNA has a molecular weight of 111.10 g/mol')
+    elif d == 'G' or d== 'g' or d== 'Guanine' or d== 'guanine':
+        return print('Guanine in DNA has a molecular weight of 126.11 g/mol')
+    elif d == 'T' or d== 't' or d== 'Thymine' or d== 'thymine':
+        return print('Thymine in DNA has a molecular weight of 151.13 g/mol')
+    else: return print(None)
 
-import math #importing math module
-a = 3 # side 1
-b = 4 # side 2
-c = math.sqrt(a**+2 + b**2) # pythag theorem
-print(c) 
+#d = input('What is the molecular weight of ')
+# dnaweight(d)
+def dnantmatch(e):
+    if e == 'A' or e== 'a' or e== 'Adenine' or e== 'adenine':
+        return print('Thymine')
+    elif e == 'C' or e== 'c' or e== 'Cytosine' or e== 'cytosine':
+        return print('Guanine')
+    elif d == 'G' or e== 'g' or e== 'Guanine' or e== 'guanine':
+        return print('Cytosine')
+    elif d == 'T' or e== 't' or e== 'Thymine' or e== 'thymine':
+        return print('Adenine')
+    else: return print(None)
+# e = input('What is the DNA base pair for ')
+# dnantmatch(e)
 
-print(type(a), type(b), type(c), sep=',', end='!\n')
+def thelargest(a, b, c):
+        if a == b == c: print('They are all the same')
+        elif b < a and a > c: print(a)
+        elif a < b and b > c: print(b)
+        elif b < c and a > a: print(c)
+        elif b == a and a > c: print(a)
+        elif a < b and b == c: print(b)
+        elif b < c and c == a: print(c)
+   
 
-## functions
+# a = input('What is the 1st number? ')
+# b = input('What is the 2nd number? ')
+# c = input('What is the 3rd number? ')
+# thelargest(a, b, c)
 
-def pythagoras(a,b):
-    return math.sqrt(a**2 + b**2)
-    
 
-print(pythagoras(3, 4))
-
-## Practice
-
-def circle_area(r): return math.pi * r**2
-def rectangle_area(w,h): return w*h
-def triangle_area(b,ht): return (b*ht)/ 2
-def distance_between(x,y,t,u): return pythagoras((x-t),(y-u))
-
-print("Find the area of a circle") # interactive circle area
-r = input("enter radius:")
-print("the area of the circle is", circle_area(float(r)))
-
-print("Find the area of a rectangle")  # interactive rect area
-w = input("enter width:")
-h = input("enter height:")
-print(rectangle_area(float(w),float(h)))
-
-print("Find the area of a triangle")
-b = input("enter triangle base length:") # interactive triangle area
-ht = input("enter triangle height:")
-print(triangle_area(float(b),float(ht)))
-
-print("Find the distance between 2 points", "Enter the coordinates of the two points")
-x = input("enter the X-value of the FIRST point:") # interactive distance between 2 points
-y = input("enter the Y-value of the FIRST point:")
-t = input("enter the X-value of the SECOND point:")
-u = input("enter the Y-value of the SECOND point:")
-print(distance_between(float(x), float(y), float(t),float(u)))
-
+##-----------------------------------------------------------------------##
 
