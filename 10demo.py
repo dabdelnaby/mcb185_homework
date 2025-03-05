@@ -31,9 +31,9 @@ def dnantmatch(e):
         return print('Thymine')
     elif e == 'C' or e== 'c' or e== 'Cytosine' or e== 'cytosine':
         return print('Guanine')
-    elif d == 'G' or e== 'g' or e== 'Guanine' or e== 'guanine':
+    elif e == 'G' or e== 'g' or e== 'Guanine' or e== 'guanine':
         return print('Cytosine')
-    elif d == 'T' or e== 't' or e== 'Thymine' or e== 'thymine':
+    elif e == 'T' or e== 't' or e== 'Thymine' or e== 'thymine':
         return print('Adenine')
     else: return print(None)
 # e = input('What is the DNA base pair for ')
