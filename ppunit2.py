@@ -29,4 +29,3 @@ def poisson(n, k):
         x = x * 1
         z = (n ** k) * (math.e) ** ((-n) // x)
         return z
-print(poisson(3, 6))
