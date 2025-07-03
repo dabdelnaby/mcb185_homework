@@ -21,3 +21,5 @@ G = int(g)
 T = int(t)
 
 print(Tm(A, G, C, T))
+
+print(Tm(1,2,3,4))

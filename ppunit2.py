@@ -9,7 +9,7 @@ def triadd(n): return n * (n + 1) // 2
         
 def triadd_loop(c):
     x = 0
-    for i in range(1, c + 1):
+    for i in range(c + 1):
         x = x + i
     return x
 
@@ -29,3 +29,22 @@ def poisson(n, k):
         x = x * 1
         z = (n ** k) * (math.e) ** ((-n) // x)
         return z
+# 4) Write a function that solves "n choose k": n! / k!(n - k)!
+def nchoosek(n,k):
+    x = factorial(k) * factorial(n - k)
+    return (factorial(n) / x)
+
+# 5) Write a function that estimates Euler's number: e (2.71828...). This can be computed as the infinite sum of 1/n!. Choose a finite number of iterations.
+def eulers(n):
+    x = 0
+    for i in range(n):
+        x += 1 / factorial(i)
+    return x
+
+# 6) Write a function to determine if a number is prime.
+def isprime(n):
+    for i in range(2, n//2 + 1):
+        if n % i == 0: return False
+    return True
+
+# 7) Write a function that estimates Pi (3.14159...) using the Nilakantha series. Again, choose a finite limit. Pi = 3 + 4/(2x3x4) - 4/(4x5x6) + 4/(6x7x8) - 4/(8x9x10) ...

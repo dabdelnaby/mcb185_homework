@@ -3,7 +3,7 @@
 
 import math
 
-def pythagoras(n):
+def pythagtrips(n):
     x = int(n)
     for a in range(1,x):
         for b in range(a,x):
@@ -12,4 +12,4 @@ def pythagoras(n):
                 print('(', a, b, int(c),')', end=' ')
 
 n = input("What is the upper limit? ")
-pythagoras(n)
+pythagtrips(n)
