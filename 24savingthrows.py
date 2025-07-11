@@ -1,6 +1,12 @@
 # Title: 24 Saving Throws
 # Author: Dean A
 
+# dont default to writing functions but, use when u want something calculated
+# WANT NO INTERACTION 
+# Need probability = 10000x times, typing that is unrealistic therefore create loop
+# Given DC what is the chance of success not just the probability 
+# IF input was used, make it regarding the amount of loops / # of runs
+
 import random
 
 

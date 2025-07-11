@@ -42,9 +42,19 @@ def eulers(n):
     return x
 
 # 6) Write a function to determine if a number is prime.
+
 def isprime(n):
     for i in range(2, n//2 + 1):
         if n % i == 0: return False
     return True
 
 # 7) Write a function that estimates Pi (3.14159...) using the Nilakantha series. Again, choose a finite limit. Pi = 3 + 4/(2x3x4) - 4/(4x5x6) + 4/(6x7x8) - 4/(8x9x10) ...
+
+def pi_approx(x):
+    pi = 3
+    for i in range(1, x+1):
+        n = 2 * i
+        d = n * (n+1) * (n+2)
+        if i % 2 == 0: pi = pi - 4 / d
+        else:          pi = pi + 4 / d
+    return pi

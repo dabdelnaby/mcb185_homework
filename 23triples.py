@@ -1,6 +1,9 @@
 # Title: 23 Triples
 # Author: Dean A
 
+# no inputs (can cause problems later), want everything on the command line
+# functions used over again, otherwise don't
+
 import math
 
 def pythagtrips(n):
@@ -11,5 +14,4 @@ def pythagtrips(n):
             if c % 1 == 0:
                 print('(', a, b, int(c),')', end=' ')
 
-n = input("What is the upper limit? ")
-pythagtrips(n)
+pythagtrips(10)
